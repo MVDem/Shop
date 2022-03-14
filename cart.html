@@ -104,85 +104,114 @@
                 </li>
               </ul>
             </nav>
-            <a class="header__person-link" href="#"
+            <a class="header__person-link" href="./registration.html"
               ><img
                 src="./img/registration.svg"
                 alt="registration"
                 width="29"
                 height="29"
             /></a>
-            <a href="./cart.html"
-              ><img src="./img/card.svg" alt="card" width="32" height="29"
-            /></a>
+            <a href="#"
+              ><img src="./img/card.svg" alt="card" width="32" height="29" /></a
+            >d
           </div>
         </div>
       </div>
     </header>
     <main>
-      <section class="title">
-        <h2 class="title__text container">registration</h2>
-      </section>
-      <section class="registration container">
-        <div>
-          <form action="endpoint" class="form">
-            <fieldset class="form__wrap form__wrap-padding">
-              <legend class="form__text">Your Name</legend>
-              <input class="form__place" type="text" placeholder="First Name" />
-              <input class="form__place" type="text" placeholder="Last Name" />
-              <div>
-                <input
-                  class="form__male"
-                  type="radio"
-                  id="contactChoice1"
-                  name="contact"
-                  value="email"
-                />
-                <label class="form__radio-label" for="contactChoice1"
-                  >Male</label
-                >
-                <input
-                  class="form__female"
-                  type="radio"
-                  id="contactChoice1"
-                  name="contact"
-                  value="email"
-                />
-                <label class="form__radio-label" for="contactChoice1"
-                  >Female</label
-                >
-              </div>
-            </fieldset>
-            <fieldset class="form__wrap">
-              <legend class="form__text">Login details</legend>
-              <input class="form__place" type="email" placeholder="Email" />
-              <input
-                class="form__place"
-                type="password"
-                placeholder="Password"
-              />
-            </fieldset>
-            <p class="form__subtext">
-              Please use 8 or more characters, with at least 1 number and a
-              mixture of uppercase and lowercase letters
-            </p>
-            <button class="form__button" type="submit">JOIN NOW</button>
-          </form>
+      <section class="cart-main">
+        <div class="container">
+          <h2 class="cart-main__text">shoping cart</h2>
         </div>
-        <div class="loyalty">
-          <h2 class="loyalty__text">LOYALTY HAS ITS PERKS</h2>
-          <h3 class="loyalty__subtext">
-            Get in on the loyalty program where you can earn points and unlock
-            serious perks. Starting with these as soon as you join:
-          </h3>
-          <ul class="loyalty__list">
-            <li class="loyalty__item">15% off welcome offer</li>
-            <li class="loyalty__item">
-              Free shipping, returns and exchanges on all orders
+      </section>
+      <section class="container cart-content">
+        <div class="cart-products">
+          <ul>
+            <li>
+              <div class="cart-product-card">
+                <img
+                  src="./img/cart1.jpg"
+                  alt="cart1"
+                  width="262"
+                  height="306"
+                />
+                <div class="cart-product-card__info">
+                  <h2 class="cart-product-card__name">
+                    mango people
+                    <span class="cart-product-card__subname">t-shirt</span>
+                  </h2>
+                  <p class="cart-product-card__price">
+                    Price:
+                    <span class="cart-product-card__price-count"> $300 </span>
+                  </p>
+                  <p class="cart-product-card__color">Color: Red</p>
+                  <p class="cart-product-card__size">Size: Xl</p>
+                  <p class="cart-product-card__quantity">Quantity:</p>
+                </div>
+              </div>
             </li>
-            <li class="loyalty__item">$10 off a purchase on your birthday</li>
-            <li class="loyalty__item">Early access to products</li>
-            <li class="loyalty__item">Exclusive offers & rewards</li>
+            <li>
+              <div class="cart-product-card">
+                <img
+                  src="./img/cart2.jpg"
+                  alt="cart1"
+                  width="262"
+                  height="306"
+                />
+                <div class="cart-product-card__info">
+                  <h2 class="cart-product-card__name">
+                    mango people
+                    <span class="cart-product-card__subname">t-shirt</span>
+                  </h2>
+                  <p class="cart-product-card__price">
+                    Price:
+                    <span class="cart-product-card__price-count"> $300 </span>
+                  </p>
+                  <p class="cart-product-card__color">Color: Red</p>
+                  <p class="cart-product-card__size">Size: Xl</p>
+                  <p class="cart-product-card__quantity">Quantity:</p>
+                </div>
+              </div>
+            </li>
           </ul>
+          <div class="cart-products__buttons">
+            <button class="cart-products__button">CLEAR SHOPPING CART</button>
+            <button class="cart-products__button">CONTINUE SHOPPING</button>
+          </div>
+        </div>
+        <div>
+          <section class="cart-order">
+            <form action="endpoint" class="cart-shipping-form">
+              <fieldset class="cart-shipping-form__wrap">
+                <legend class="cart-shipping-form__text">
+                  shipping adress
+                </legend>
+                <input
+                  class="cart-shipping-form-place"
+                  type="text"
+                  placeholder="City"
+                />
+                <input
+                  class="cart-shipping-form-place"
+                  type="text"
+                  placeholder="State"
+                />
+                <input
+                  class="cart-shipping-form-place"
+                  type="text"
+                  placeholder="Postcode / Zip"
+                />
+                <button class="cart-shipping__button">get a quote</button>
+              </fieldset>
+            </form>
+          </section>
+          <section class="cart-cost">
+            <p class="cart-order__subtotal">sub total $900</p>
+            <p class="cart-order__grandtotal">
+              grand total <span class="cart-order__grandtotal-pink">$900</span>
+            </p>
+            <button class="cart-order__button">proceed to checkout</button>
+          </section>
         </div>
       </section>
     </main>
