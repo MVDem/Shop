@@ -1,0 +1,34 @@
+.advantages {
+  background-color: $black-color;
+
+  &__list {
+    min-height: 341px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__image {
+    align-self: center;
+  }
+
+  &__text {
+    text-align: center;
+    margin: 28px 0 16px 0;
+    font-family: Lato;
+    @include text-20-400-24;
+    color: $white-color;
+  }
+
+  &__subtext {
+    text-align: center;
+    margin: 0 20px;
+    @include text-14-400-17;
+    color: $white-color;
+  }
+}
