@@ -5,12 +5,28 @@
     min-height: 341px;
     display: flex;
     justify-content: space-between;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__item {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include tablet {
+      width: 360px;
+      margin-top: 48px;
+    }
+  }
+
+  &__item--last-item {
+    @include tablet {
+      margin-bottom: 48px;
+    }
   }
 
   &__image {

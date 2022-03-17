@@ -3,18 +3,66 @@
   background-color: $light-pink;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+
+  &__text {
+    @include font(24px, 28px, 400);
+    color: $dark-pink;
+    text-transform: uppercase;
+    margin-left: 16px;
+  }
 }
 
-.cart-main__text {
-  font-family: Lato;
-  font-size: 24px;
-  font-weight: 400;
-  color: $dark-pink;
-  text-transform: uppercase;
+.cart-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 96px;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
 }
 
 .cart-products {
   width: 652px;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 96%;
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 128px;
+
+    @include tablet {
+      width: 96%;
+      justify-content: space-around;
+    }
+  }
+
+  &__button {
+    width: 235px;
+    height: 50px;
+    background-color: $white-color;
+    border: 1px solid #a4a4a4;
+    @include font(14px, 16px, 300);
+    text-transform: uppercase;
+
+    @include mobile {
+      width: 175px;
+      height: 33px;
+      @include font(12px, 14px, 400);
+    }
+  }
 }
 
 .cart-product-card {
@@ -25,6 +73,18 @@
   border: 1px solid;
   margin-bottom: 40px;
 
+  @include mobile {
+    width: 358px;
+    height: 188px;
+  }
+
+  img {
+    @include mobile {
+      width: 144px;
+      height: 188px;
+    }
+  }
+
   &__info {
     flex-grow: 1;
     padding: 22px 22px 0 31px;
@@ -32,67 +92,67 @@
 
   &__name {
     text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 400;
-    margin-bottom: 42px;
+    @include font(24px, 42px, 400);
+    span {
+      display: block;
+      margin-top: 10px;
+    }
+
+    @include mobile {
+      @include font(16px, 19px, 400);
+    }
   }
 
-  &__subname {
-    display: block;
-    margin-top: 10px;
-  }
-
-  &__price,
-  &__color,
-  &__size,
-  &__quantity {
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 26px;
+  &__description {
     color: $text-gray;
     margin-bottom: 6px;
-  }
+    @include font(22px, 16px, 400);
 
-  &__price-count {
-    color: $dark-pink;
-  }
+    span {
+      color: $dark-pink;
+    }
 
-  &__quantity {
-    position: relative;
+    &--quantity {
+      position: relative;
+      display: flex;
+    }
+
+    &--quantity::after {
+      content: '2';
+      font-size: 18px;
+      width: 44px;
+      height: 25px;
+      border: 1px solid;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      left: 121px;
+      bottom: 0px;
+
+      @include mobile {
+        width: 23px;
+        height: 14px;
+      }
+    }
+
+    @include mobile {
+      @include font(14px, 17px, 400);
+    }
+  }
+}
+
+.cart-form {
+  @include tablet {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 96%;
   }
 
-  &__quantity::after {
-    content: '2';
-    font-size: 18px;
-    width: 44px;
-    height: 25px;
-    border: 1px solid;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    left: 121px;
-    bottom: 2px;
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
   }
-}
-
-.cart-products__buttons {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 128px;
-}
-
-.cart-products__button {
-  width: 235px;
-  height: 50px;
-  background-color: $white-color;
-  border: 1px solid #a4a4a4;
-}
-
-.cart-content {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 96px;
 }
 
 .cart-shipping-form__wrap {
@@ -113,6 +173,10 @@
   height: 45px;
   margin-top: 20px;
   border: 1px solid #a4a4a4;
+
+  @include tablet {
+    width: 340px;
+  }
 }
 
 .cart-shipping-form-place::placeholder {
@@ -137,35 +201,36 @@
 }
 
 .cart-cost {
+  width: 360px;
   background-color: $light-pink;
-  padding: 39px 34px 0 44px;
   margin-top: 58px;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: center;
+
+  div {
+    width: 292px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
 
 .cart-order {
   width: 360px;
 
   &__subtotal {
-    font-family: Lato;
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 13px;
+    @include font(11px, 13px, 400);
     text-transform: uppercase;
+    margin: 39px 0 0 0;
     color: #4a4a4a;
-    margin-bottom: 12px;
   }
 
   &__grandtotal {
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 19px;
+    @include font(16px, 19px, 300);
     text-transform: uppercase;
     color: #4a4a4a;
-    margin: 0 3px 39px 0;
+    margin: 12px 3px 0 0;
   }
 
   &__grandtotal-pink {
@@ -175,7 +240,7 @@
   &__button {
     width: 273px;
     height: 50px;
-    margin: 0 43px 42px 0;
+    margin: 39px 0 42px 0;
     background-color: $dark-pink;
     border: none;
     font-size: 16px;

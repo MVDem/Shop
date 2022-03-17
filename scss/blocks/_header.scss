@@ -14,10 +14,11 @@
   &__burger {
     border: none;
     background-color: transparent;
+    margin: 0 33px 0 0;
   }
 
   &__person-link {
-    margin: 0 34px 0 33px;
+    margin: 0 33px 0 0;
   }
 
   &__navigation {
@@ -32,9 +33,9 @@
     display: none;
   }
 
-  &-block {
+  /* &-block {
     display: block;
-  }
+  } */
 
   &__navigation-title {
     @include text-14-700-17;
@@ -74,4 +75,40 @@
 
 .display-block {
   display: block;
+}
+
+@media (max-width: $max-tablet-width) {
+  .header {
+    &__logo {
+      margin: 0 41px 0 16px;
+    }
+
+    &__burger {
+      margin: 0 25px 0 0;
+    }
+
+    &__person-link {
+      margin: 0 25px 0 0;
+    }
+    &__person-link--tablet-margin {
+      margin: 0 25 0 16px;
+    }
+    &__navigation {
+      right: 0px;
+    }
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .header {
+    &__logo {
+      margin: 0 41px 0 0;
+    }
+    &__person-link {
+      display: none;
+    }
+    &__cart-link {
+      display: none;
+    }
+  }
 }

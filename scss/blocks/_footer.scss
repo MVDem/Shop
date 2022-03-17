@@ -4,9 +4,25 @@
   margin: 0 auto;
   background-image: url(../img/beach.jpg);
 
+  @include tablet {
+    height: 693px;
+    background-size: cover;
+  }
+
   &__list {
     display: flex;
     justify-content: space-between;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    @include tablet {
+      margin: 54px;
+    }
   }
 
   &__blockquote {
@@ -39,6 +55,10 @@
     justify-content: flex-end;
     align-items: center;
     flex-grow: 1;
+
+    @include tablet {
+      margin-top: 54px;
+    }
   }
 
   &__title {

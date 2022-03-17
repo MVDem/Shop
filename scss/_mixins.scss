@@ -4,6 +4,25 @@
   align-items: center;
 }
 
+@mixin font($size: 14px, $heght: 17px, $weight: 300, $style: normal) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $heght;
+  font-style: $style;
+}
+
+@mixin tablet {
+  @media (max-width: $max-tablet-width) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $max-mobile-width) {
+    @content;
+  }
+}
+
 @mixin text-14-700-17() {
   font-size: 14px;
   font-weight: 700;

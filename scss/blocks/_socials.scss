@@ -6,17 +6,35 @@
     font-weight: 400;
     line-height: 19px;
     color: $white-color;
+
+    @include mobile {
+      position: absolute;
+      margin-bottom: 9px;
+    }
   }
 
   &__list {
     min-height: 80px;
     @include flex-center-space-between();
+
+    @include mobile {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      height: 143px;
+    }
   }
 
   &__icons {
     display: flex;
     flex-grow: 1;
     justify-content: flex-end;
+
+    @include mobile {
+      position: relative;
+      bottom: 60px;
+      justify-content: center;
+    }
   }
 
   &__icon {

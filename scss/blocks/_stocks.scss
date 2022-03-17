@@ -5,17 +5,31 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include mobile {
+      justify-content: center;
+    }
   }
 
   &__item {
-    width: 360px;
+    width: 31%;
     min-height: 260px;
+    background-size: cover;
     background-color: $brown-color;
     margin: 0 0 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
+
+    @include tablet {
+      min-height: 167px;
+    }
+
+    @include mobile {
+      width: 92%;
+      min-height: 248px;
+    }
   }
 
   &__item--woman {
@@ -33,6 +47,14 @@
   &__item--accesories {
     width: 100%;
     background-image: url(../img/accesories.jpg);
+
+    @include tablet {
+      min-height: 116px;
+    }
+    @include mobile {
+      width: 92%;
+      min-height: 111px;
+    }
   }
 
   &__title {
@@ -41,16 +63,12 @@
 
   &__text {
     color: $white-color;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
+    @include font(16px, 19px, 400);
     text-align: center;
   }
 
   &__subtext {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28, 8px;
+    @include font(24px, 28px, 700);
     color: $dark-pink;
   }
 }

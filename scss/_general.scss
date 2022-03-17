@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  width: 1140px;
+  max-width: 72%;
   margin: 0 auto;
 }
 
@@ -33,5 +33,17 @@ body {
     line-height: 29px;
     text-align: left;
     color: $dark-pink;
+  }
+}
+
+@media (max-width: $max-tablet-width) {
+  .container {
+    max-width: 96%;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .container {
+    max-width: 96%;
   }
 }

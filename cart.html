@@ -19,9 +19,13 @@
       <div class="container">
         <div class="header__wrapper">
           <div class="header__contrls">
-            <a class="header__logo" href="./index.html"
-              ><img src="./img/logo.svg" alt="logo" width="44" height="38"
-            /></a>
+            <img
+              class="header__logo"
+              src="./img/logo.svg"
+              alt="logo"
+              width="44"
+              height="38"
+            />
             <img src="./img/loupe.svg" alt="loupe" width="26" height="27" />
           </div>
           <div class="header__contrls">
@@ -103,25 +107,25 @@
                 </li>
               </ul>
             </nav>
-            <a class="header__person-link" href="./registration.html"
+            <a
+              class="header__person-link header__person-link--tablet-margin"
+              href="./registration.html"
               ><img
                 src="./img/registration.svg"
                 alt="registration"
                 width="29"
                 height="29"
             /></a>
-            <a href="#"
-              ><img src="./img/card.svg" alt="card" width="32" height="29" /></a
-            >
+            <a class="header__person-link" href="./cart.html"
+              ><img src="./img/card.svg" alt="card" width="32" height="29"
+            /></a>
           </div>
         </div>
       </div>
     </header>
     <main>
-      <section class="cart-main">
-        <div class="container">
-          <h2 class="cart-main__text">shoping cart</h2>
-        </div>
+      <section class="cart-main container">
+        <h2 class="cart-main__text">shoping cart</h2>
       </section>
       <section class="container cart-content">
         <div class="cart-products">
@@ -160,25 +164,29 @@
                 <div class="cart-product-card__info">
                   <h2 class="cart-product-card__name">
                     mango people
-                    <span class="cart-product-card__subname">t-shirt</span>
+                    <span>t-shirt</span>
                   </h2>
-                  <p class="cart-product-card__price">
+                  <p class="cart-product-card__description">
                     Price:
                     <span class="cart-product-card__price-count"> $300 </span>
                   </p>
-                  <p class="cart-product-card__color">Color: Red</p>
-                  <p class="cart-product-card__size">Size: Xl</p>
-                  <p class="cart-product-card__quantity">Quantity:</p>
+                  <p class="cart-product-card__description">Color: Red</p>
+                  <p class="cart-product-card__description">Size: Xl</p>
+                  <p
+                    class="cart-product-card__description cart-product-card__description--quantity"
+                  >
+                    Quantity:
+                  </p>
                 </div>
               </div>
             </li>
           </ul>
           <div class="cart-products__buttons">
-            <button class="cart-products__button">CLEAR SHOPPING CART</button>
+            <button class="cart-products__button">clear shoping cart</button>
             <button class="cart-products__button">CONTINUE SHOPPING</button>
           </div>
         </div>
-        <div>
+        <div class="cart-form">
           <section class="cart-order">
             <form action="endpoint" class="cart-shipping-form">
               <fieldset class="cart-shipping-form__wrap">
@@ -205,10 +213,13 @@
             </form>
           </section>
           <section class="cart-cost">
-            <p class="cart-order__subtotal">sub total $900</p>
-            <p class="cart-order__grandtotal">
-              grand total <span class="cart-order__grandtotal-pink">$900</span>
-            </p>
+            <div>
+              <p class="cart-order__subtotal">sub total $900</p>
+              <p class="cart-order__grandtotal">
+                grand total
+                <span class="cart-order__grandtotal-pink">$900</span>
+              </p>
+            </div>
             <button class="cart-order__button">proceed to checkout</button>
           </section>
         </div>
@@ -245,17 +256,17 @@
           <div class="socials__copy">
             <p>© 2021 Brand All Rights Reserved.</p>
           </div>
-          <ul class="socials__icon">
+          <ul class="socials__icons">
             <li class="socials__fbook">
               <img src="./img/icon1.jpg" alt="logo1" />
             </li>
-            <li class="socials__inst">
+            <li class="socials__icon">
               <img src="./img/icon2.jpg" alt="logo2" />
             </li>
-            <li class="socials__pinte">
+            <li class="socials__icon">
               <img src="./img/icon3.jpg" alt="logo3" />
             </li>
-            <li class="socials__twitter">
+            <li class="socials__icon">
               <img src="./img/icon4.jpg" alt="logo4" />
             </li>
           </ul>

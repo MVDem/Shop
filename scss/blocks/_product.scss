@@ -24,7 +24,7 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   &__item {
@@ -33,6 +33,10 @@
     background-color: $grey-color;
     margin: 0 0 30px;
     position: relative;
+
+    @include tablet {
+      margin: 0 16px 30px;
+    }
   }
 
   &__item:hover {
