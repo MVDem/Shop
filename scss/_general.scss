@@ -22,17 +22,17 @@ body {
   clip: rect(0 0 0 0);
 }
 .title {
-  background-color: $light-pink;
   min-height: 148px;
+  background-color: $light-pink;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 
   &__text {
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 29px;
-    text-align: left;
+    @include font(24px, 28px, 400);
     color: $dark-pink;
+    text-transform: uppercase;
+    margin-left: 16px;
   }
 }
 

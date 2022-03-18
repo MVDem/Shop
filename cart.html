@@ -5,12 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
+
     <title>Shop</title>
   </head>
 
@@ -19,13 +14,9 @@
       <div class="container">
         <div class="header__wrapper">
           <div class="header__contrls">
-            <img
-              class="header__logo"
-              src="./img/logo.svg"
-              alt="logo"
-              width="44"
-              height="38"
-            />
+            <a class="header__logo" href="./index.html"
+              ><img src="./img/logo.svg" alt="logo" width="44" height="38"
+            /></a>
             <img src="./img/loupe.svg" alt="loupe" width="26" height="27" />
           </div>
           <div class="header__contrls">
@@ -36,7 +27,9 @@
               <h2 class="header__navigation-title">menu</h2>
               <ul>
                 <li>
-                  <a class="header__navigation-subtitle" href="#">man</a>
+                  <a class="header__navigation-subtitle" href="./product.html"
+                    >man</a
+                  >
                   <ul>
                     <li>
                       <a class="header__navigation-item" href="#"
@@ -141,15 +134,19 @@
                 <div class="cart-product-card__info">
                   <h2 class="cart-product-card__name">
                     mango people
-                    <span class="cart-product-card__subname">t-shirt</span>
+                    <span>t-shirt</span>
                   </h2>
-                  <p class="cart-product-card__price">
+                  <p class="cart-product-card__description">
                     Price:
                     <span class="cart-product-card__price-count"> $300 </span>
                   </p>
-                  <p class="cart-product-card__color">Color: Red</p>
-                  <p class="cart-product-card__size">Size: Xl</p>
-                  <p class="cart-product-card__quantity">Quantity:</p>
+                  <p class="cart-product-card__description">Color: Red</p>
+                  <p class="cart-product-card__description">Size: Xl</p>
+                  <p
+                    class="cart-product-card__description cart-product-card__description--quantity"
+                  >
+                    Quantity:
+                  </p>
                 </div>
               </div>
             </li>
