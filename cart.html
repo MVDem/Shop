@@ -117,10 +117,12 @@
       </div>
     </header>
     <main>
+      <h1 class="visually-hidden">cart-main</h1>
       <section class="cart-main container">
         <h2 class="cart-main__text">shoping cart</h2>
       </section>
       <section class="container cart-content">
+        <h2 class="visually-hidden">cart-content</h2>
         <div class="cart-products">
           <ul>
             <li>
@@ -132,10 +134,10 @@
                   height="306"
                 />
                 <div class="cart-product-card__info">
-                  <h2 class="cart-product-card__name">
+                  <h3 class="cart-product-card__name">
                     mango people
                     <span>t-shirt</span>
-                  </h2>
+                  </h3>
                   <p class="cart-product-card__description">
                     Price:
                     <span class="cart-product-card__price-count"> $300 </span>
@@ -185,6 +187,7 @@
         </div>
         <div class="cart-form">
           <section class="cart-order">
+            <h2 class="visually-hidden">cart-order</h2>
             <form action="endpoint" class="cart-shipping-form">
               <fieldset class="cart-shipping-form__wrap">
                 <legend class="cart-shipping-form__text">
@@ -205,25 +208,28 @@
                   type="text"
                   placeholder="Postcode / Zip"
                 />
-                <button class="cart-shipping__button">get a quote</button>
+                <button class="cart-shipping-form__button">get a quote</button>
               </fieldset>
             </form>
           </section>
           <section class="cart-cost">
+            <h3 class="visually-hidden">cart-cost</h3>
+
             <div>
-              <p class="cart-order__subtotal">sub total $900</p>
-              <p class="cart-order__grandtotal">
+              <p class="cart-cost__subtotal">sub total $900</p>
+              <p class="cart-cost__grandtotal">
                 grand total
-                <span class="cart-order__grandtotal-pink">$900</span>
+                <span class="cart-cost__grandtotal-pink">$900</span>
               </p>
             </div>
-            <button class="cart-order__button">proceed to checkout</button>
+            <button class="cart-cost__button">proceed to checkout</button>
           </section>
         </div>
       </section>
     </main>
     <footer>
       <section class="footer">
+        <h2 class="visually-hidden">footer</h2>
         <div class="footer__list container">
           <div class="footer__blockquote">
             <img class="footer__pic" src="./img/photo.svg" alt="photo" />
@@ -249,6 +255,7 @@
         </div>
       </section>
       <section class="socials">
+        <h2 class="visually-hidden">socials</h2>
         <div class="socials__list container">
           <div class="socials__copy">
             <p>© 2021 Brand All Rights Reserved.</p>

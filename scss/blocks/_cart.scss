@@ -187,7 +187,7 @@
   color: $shadow-gray;
 }
 
-.cart-shipping__button {
+.cart-shipping-form__button {
   width: 100px;
   height: 35px;
   text-transform: uppercase;
@@ -214,10 +214,6 @@
     flex-direction: column;
     align-items: flex-end;
   }
-}
-
-.cart-order {
-  width: 360px;
 
   &__subtotal {
     @include font(11px, 13px, 400);
@@ -249,4 +245,8 @@
     text-transform: uppercase;
     color: $white-color;
   }
+}
+
+.cart-order {
+  width: 360px;
 }
