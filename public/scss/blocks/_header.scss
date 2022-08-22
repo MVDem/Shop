@@ -21,6 +21,29 @@
     margin: 0 33px 0 0;
   }
 
+  &__person-cart {
+    margin-right: 33px;
+    position: absolute;
+  }
+
+  &__person-cart::before {
+    content: ' ';
+    position: absolute;
+    min-width: 20px;
+    min-height: 20px;
+    top: -8px;
+    left: 30px;
+    background: $dark-pink;
+    border-radius: 50%;
+  }
+
+  &__person-lable {
+    position: relative;
+    top: -40px;
+    left: 35px;
+    color: $white-color;
+  }
+
   &__navigation {
     flex-direction: column;
     position: absolute;

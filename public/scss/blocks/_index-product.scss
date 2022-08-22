@@ -39,12 +39,12 @@
     }
   }
 
-  &__item:hover {
+  &__item-opacity:hover {
     opacity: 0.3;
   }
 
   &__cart {
-    color: $white-color;
+    color: $black;
     @include text-14-400-17;
     width: 138px;
     height: 43px;
@@ -52,7 +52,7 @@
     left: 115px;
     position: absolute;
     background-color: Transparent;
-    border: 1px solid $white-color;
+    border: 1px solid $black;
     display: none;
   }
 
@@ -72,7 +72,7 @@
     background-image: url(../img/card.svg);
     background-size: 26px 24px;
     position: absolute;
-    color: $white-color;
+    color: $black;
     top: -4px;
     left: -30px;
   }
