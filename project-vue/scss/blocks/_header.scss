@@ -7,6 +7,10 @@
     @include flex-center-space-between();
   }
 
+  &__controls-right {
+    min-width: 200px;
+  }
+
   &__logo {
     margin: 0 41px 0 0;
   }
@@ -132,6 +136,12 @@
     }
     &__cart-link {
       display: none;
+    }
+    &__person-lable {
+      position: relative;
+      top: -21px;
+      left: 0px;
+      color: $white-color;
     }
   }
 }

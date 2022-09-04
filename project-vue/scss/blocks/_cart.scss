@@ -112,29 +112,6 @@
       color: $dark-pink;
     }
 
-    &--quantity {
-      position: relative;
-      display: flex;
-    }
-
-    &--quantity::after {
-      content: '2';
-      font-size: 18px;
-      width: 44px;
-      height: 25px;
-      border: 1px solid;
-      display: flex;
-      justify-content: center;
-      position: absolute;
-      left: 121px;
-      bottom: 0px;
-
-      @include mobile {
-        width: 23px;
-        height: 14px;
-      }
-    }
-
     @include mobile {
       @include font(14px, 17px, 400);
     }
