@@ -49,8 +49,6 @@ export default createStore({
       return fetch('api/cart', { method: 'POST', body: good }).then(
         (response) => {
           commit('addToCart', good.id);
-          console.log(good);
-          console.log(this.state.cart);
         }
       );
     },

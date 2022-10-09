@@ -45,13 +45,13 @@
 
   &__cart {
     color: $black;
+    background-color: $light-pink;
     @include text-14-400-17;
     width: 138px;
     height: 43px;
     top: 188px;
     left: 115px;
     position: absolute;
-    background-color: Transparent;
     border: 1px solid $black;
     display: none;
   }
