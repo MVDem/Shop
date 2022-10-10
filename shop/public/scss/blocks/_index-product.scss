@@ -1,0 +1,126 @@
+.product {
+  &__title {
+    margin: 96px 0 0 0;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  &__subtitle {
+    margin: 0 0 48px;
+    color: $light-grey;
+    @include text-14-400-17;
+    text-align: center;
+  }
+
+  &__subtext {
+    @include text-14-400-17;
+    text-align: center;
+    color: $dark-grey;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__item {
+    width: 360px;
+    height: 581px;
+    background-color: $grey-color;
+    margin: 0 0 30px;
+    position: relative;
+
+    @include tablet {
+      margin: 0 16px 30px;
+    }
+  }
+
+  &__item-opacity:hover {
+    opacity: 0.3;
+  }
+
+  &__cart {
+    color: $black;
+    background-color: $light-pink;
+    @include text-14-400-17;
+    width: 138px;
+    height: 43px;
+    top: 188px;
+    left: 115px;
+    position: absolute;
+    border: 1px solid $black;
+    display: none;
+  }
+
+  &__item:hover .product__cart {
+    display: block;
+  }
+
+  &__button-text {
+    margin-left: 30px;
+    position: relative;
+  }
+
+  &__button-text::before {
+    content: '';
+    width: 26px;
+    height: 24px;
+    background-image: url(../img/card.svg);
+    background-size: 26px 24px;
+    position: absolute;
+    color: $black;
+    top: -4px;
+    left: -30px;
+  }
+
+  &__text {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    margin: 25px 0 0 18px;
+    text-transform: uppercase;
+  }
+
+  &__subtext {
+    @include text-14-400-17;
+    text-align: left;
+    margin: 13px 29px 18px 17px;
+    color: $dark-grey;
+  }
+
+  &__price {
+    margin: 0 0 20px 19px;
+    color: $dark-pink;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    display: block;
+    background-color: $dark-pink;
+    width: 211px;
+    height: 47px;
+    margin: 49px 0 95px;
+    justify-content: center;
+    text-align: center;
+    text-decoration-line: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: $white-color;
+  }
+
+  &__link-centre {
+    display: flex;
+    margin: 12px 0 0 40px;
+  }
+}

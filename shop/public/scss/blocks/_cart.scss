@@ -1,0 +1,237 @@
+.cart-main {
+  min-height: 148px;
+  background-color: $light-pink;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &__text {
+    @include font(24px, 28px, 400);
+    color: $dark-pink;
+    text-transform: uppercase;
+    margin-left: 16px;
+  }
+}
+
+.cart-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 96px;
+  margin-bottom: 30px;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+}
+
+.cart-products {
+  width: 652px;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 96%;
+  }
+
+  @include mobile {
+    width: 96%;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 128px;
+
+    @include tablet {
+      width: 96%;
+      justify-content: space-around;
+    }
+  }
+
+  &__button {
+    width: 235px;
+    height: 50px;
+    background-color: $white-color;
+    border: 1px solid #a4a4a4;
+    @include font(14px, 16px, 300);
+    text-transform: uppercase;
+
+    @include mobile {
+      width: 175px;
+      height: 33px;
+      @include font(12px, 14px, 400);
+    }
+  }
+}
+
+.cart-product-card {
+  width: 652px;
+  height: 306px;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid;
+  margin-bottom: 40px;
+
+  @include mobile {
+    width: 358px;
+    height: 188px;
+  }
+
+  img {
+    @include mobile {
+      width: 144px;
+      height: 188px;
+    }
+  }
+
+  &__info {
+    flex-grow: 1;
+    padding: 22px 22px 0 31px;
+  }
+
+  &__name {
+    text-transform: uppercase;
+    @include font(24px, 42px, 400);
+    span {
+      display: block;
+      margin-top: 10px;
+    }
+
+    @include mobile {
+      @include font(16px, 19px, 400);
+    }
+  }
+
+  &__description {
+    color: $text-gray;
+    margin-bottom: 6px;
+    @include font(22px, 16px, 400);
+
+    span {
+      color: $dark-pink;
+    }
+
+    @include mobile {
+      @include font(14px, 17px, 400);
+    }
+  }
+}
+
+.cart-form {
+  @include tablet {
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  @include mobile {
+    width: 96%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.cart-shipping-form__wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-shipping-form__text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: $black-color;
+}
+
+.cart-shipping-form-place {
+  max-width: 96%;
+  height: 45px;
+  margin-top: 20px;
+  border: 1px solid #a4a4a4;
+
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.cart-shipping-form-place::placeholder {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  padding-left: 17px;
+  color: $shadow-gray;
+}
+
+.cart-shipping-form__button {
+  max-width: 100px;
+  height: 35px;
+  text-transform: uppercase;
+  font-family: Lato;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 13px;
+  margin-top: 34px;
+  background-color: $white-color;
+  border: 1px solid #a4a4a4;
+}
+
+.cart-cost {
+  max-width: 360px;
+  background-color: $light-pink;
+  margin-top: 58px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  div {
+    width: 292px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__subtotal {
+    @include font(11px, 13px, 400);
+    text-transform: uppercase;
+    margin: 39px 10px 0 0;
+    color: #4a4a4a;
+  }
+
+  &__grandtotal {
+    @include font(16px, 19px, 300);
+    text-transform: uppercase;
+    color: #4a4a4a;
+    margin: 12px 10px 0 0;
+  }
+
+  &__grandtotal-pink {
+    color: $dark-pink;
+  }
+
+  &__button {
+    width: 273px;
+    height: 50px;
+    margin: 39px 0 42px 0;
+    background-color: $dark-pink;
+    border: none;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: $white-color;
+  }
+}
+
+.cart-order {
+  max-width: 96%;
+  @include tablet {
+    width: 50%;
+  }
+  @include mobile {
+    width: 96%;
+  }
+}
