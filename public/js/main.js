@@ -1,3 +1,5 @@
-import ShopController from './ShopController.js';
+import Cart from './model/Cart.js';
+import ProductsList from './model/ProductList.js';
 
-ShopController.init();
+let cart = new Cart();
+let products = new ProductsList(cart);
