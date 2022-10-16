@@ -9,6 +9,8 @@ let jsonParser = bodyParser.json();
  */
 app.use(express.static('./dist'));
 
+const port = process.env.PORT || 3000;
+
 app.get('/api/good', (req, res) => {
   fs.readFile('./server/data/catalog.json', 'utf8', (err, data) => {
     res.send(data);
@@ -49,6 +51,6 @@ app.delete('/api/cart', jsonParser, (req, res) => {
   });
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log('server is running on port 3000!');
 });
